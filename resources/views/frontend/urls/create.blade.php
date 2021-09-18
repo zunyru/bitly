@@ -106,7 +106,7 @@
                         <a class="copy-clipboard ml-4 w-1/5 bg-red-500 hover:bg-red-700 text-white font-semibold py-2 px-4 border border-red-500 rounded shadow"
                            href="javascript:void(0);"
                            data-clipboard-text="{{ session('short_url') }}">
-                            Copy link to clipboard</a>
+                            Copy link</a>
                     </div>
                 </div>
                 <div class="flex lg:w-2/3 w-full mx-auto text-sm text-red-700">

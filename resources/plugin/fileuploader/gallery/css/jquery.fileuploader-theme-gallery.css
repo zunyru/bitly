@@ -1,0 +1,278 @@
+.fileuploader .is-hidden {
+	display:none !important;
+}
+
+/* input & items size */
+.fileuploader-theme-gallery .fileuploader-input,
+.fileuploader-theme-gallery .fileuploader-items-list .fileuploader-item {
+    position: relative;
+	display: inline-block;
+    margin: 16px 0 0 16px;
+    padding: 0;
+	vertical-align: top;
+    
+    width: 16.66666667%;
+    width: calc(16.66666667% - 16px);
+}
+
+/* input */
+.fileuploader-theme-gallery .fileuploader-input-inner {
+	display: flex;
+    flex-direction: column;
+	align-items: center;
+    justify-content: center;
+	width: 100%;
+	height: 100%;
+	min-height: 210px;
+    border: 2px dashed #d5d9e0;
+    text-align: center;
+    color: #90a0b1;
+	font-weight: 700;
+	cursor: pointer;
+	border-radius: 6px;
+	user-select: none;
+	-webkit-transition: all 0.2s ease;
+	        transition: all 0.2s ease;
+}
+.fileuploader-theme-gallery .fileuploader-input-inner .fileuploader-icon-main {
+	font-size: 34px;
+	margin-bottom: 4px;
+	-webkit-transition: all 0.2s ease;
+	        transition: all 0.2s ease;
+}
+.fileuploader-theme-gallery .fileuploader-input-inner:hover {
+	border-color: #b8beca;
+	background: #fcfcfe;
+	box-shadow: 0 4px 24px -1px rgba(0,0,0,0.05);
+}
+.fileuploader-theme-gallery .fileuploader-input-inner:hover .fileuploader-icon-main {
+	margin-bottom: 12px;
+}
+.fileuploader-theme-gallery .fileuploader-input-inner:active,
+.fileuploader-theme-gallery .fileuploader-dragging .fileuploader-input-inner {
+	background: #fffffe;
+}
+.fileuploader-theme-gallery .fileuploader-input-inner:active .fileuploader-icon-main,
+.fileuploader-theme-gallery .fileuploader-dragging .fileuploader-input-inner .fileuploader-icon-main {
+	margin-bottom: 0;
+}
+
+/* items */
+.fileuploader-theme-gallery .fileuploader-items .fileuploader-items-list {
+	display: flex;
+	flex-wrap: wrap;
+	margin: -16px 0 0 -16px;
+}
+.fileuploader-theme-gallery .fileuploader-items .fileuploader-item {
+	border-bottom: 0;
+}
+.fileuploader-theme-gallery .fileuploader-items .fileuploader-item:last-child {
+    margin-bottom: 0;
+}
+.fileuploader-theme-gallery .fileuploader-items .fileuploader-item-inner {
+	height: 100%;
+	background: #fff;
+	border-radius: 6px;
+	box-shadow: 0 4px 24px -1px rgba(0,0,0,0.05);
+	overflow: hidden;
+	z-index: 1;
+}
+.fileuploader-theme-gallery .fileuploader-item-inner .thumbnail-holder {
+	position: relative;
+	width: 100%;
+	padding-top: 75%;
+	border-radius: 6px 6px 0 0;
+	overflow: hidden;
+}
+.fileuploader-theme-gallery .fileuploader-items-list .fileuploader-item-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+    width: 100%;
+	height: 100%;
+	text-align: center;
+	border-radius: 0;
+	overflow: hidden;
+}
+.fileuploader-theme-gallery .thumbnail-holder .fileuploader-item-icon {
+	border-radius: 0;
+	font-size: 34px;
+}
+.fileuploader-theme-gallery .fileuploader-items .fileuploader-item .fileuploader-action-popup {
+    border-radius: 0;
+    z-index: 1;
+}
+.fileuploader-theme-gallery .fileuploader-item .actions-holder {
+    position: absolute;
+    top: 6px;
+    right: 0;
+	width: 100%;
+    height: 20px;
+	padding: 0 6px;
+    z-index: 2;
+	text-align: right;
+}
+.fileuploader-theme-gallery .fileuploader-items .fileuploader-item .fileuploader-action {
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+.fileuploader-theme-gallery .fileuploader-items .fileuploader-item .fileuploader-action + .fileuploader-action {
+    margin-left: 8px;
+}
+
+.fileuploader-theme-gallery .fileuploader-item-inner .content-holder {
+	padding: 12px 8px;
+	text-align: center;
+}
+.fileuploader-theme-gallery .fileuploader-item-inner .content-holder h5 {
+	width: 100%;
+	margin: 0;
+	color: #35354f;
+	font-size: 14px;
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.fileuploader-theme-gallery .fileuploader-item-inner .content-holder span {
+	font-size: 12px;
+	color: #999a9f;
+}
+.fileuploader-theme-gallery .fileuploader-item .type-holder {
+    position: absolute;
+    top: 100%;
+    right: -4px;
+	width: 32px;
+    height: 32px;
+    margin-top: -24px;
+	text-transform: uppercase;
+	z-index: 1;
+}
+
+.fileuploader-theme-gallery .fileuploader-item .gallery-item-dropdown {
+	display: none;
+	position: absolute;
+    top: 100%;
+    right: 34px;
+    margin: 8px 0 0;
+	padding: 0;
+    background: #fff;
+	box-shadow: 1px 4px 12px rgba(0, 0, 0, 0.2);
+	border-radius: 4px;
+	overflow: hidden;
+	z-index: 1;
+}
+.fileuploader-theme-gallery .fileuploader-item .gallery-item-dropdown a {
+	display: block;
+	padding: 10px 12px;
+	min-width: 120px;
+	color: #35354f;
+	cursor: pointer;
+	text-decoration: none;
+}
+.fileuploader-theme-gallery .fileuploader-item .gallery-item-dropdown a:hover {
+	background: rgba(0, 0, 0, 0.03)
+}
+.fileuploader-theme-gallery .fileuploader-item .gallery-item-dropdown a:active {
+	background: rgba(0, 0, 0, 0.05)
+}
+
+.fileuploader-theme-gallery .file-main-1 .fileuploader-item-inner {
+	background: #789bec;
+}
+.fileuploader-theme-gallery .file-main-1 .fileuploader-item-inner .content-holder h5 {
+	color: #fff;
+}
+.fileuploader-theme-gallery .file-main-1 .fileuploader-item-inner .content-holder span {
+	color: rgba(255, 255, 255, 0.8);
+}
+
+
+/* uploading */
+.fileuploader-theme-gallery .fileuploader-items .fileuploader-item.upload-failed .thumbnail-holder {
+	background: #db6868;
+}
+.fileuploader-theme-gallery .fileuploader-items .fileuploader-item.upload-failed .thumbnail-holder:after {
+	content: 'Error!';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-weight: 700;
+    color: #9e4c4c;
+}
+.fileuploader-theme-gallery .fileuploader-item .progress-holder {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+    background: #fff;
+    display: none;
+    z-index: 1;
+}
+.fileuploader-theme-gallery .fileuploader-item .progress-holder span {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    transform: translateX(-50%) translateY(-50%);
+	z-index: 1;
+}
+.fileuploader-theme-gallery .fileuploader-item .progress-holder .fileuploader-progressbar {
+	height: 100%;
+	border-radius: 0;
+}
+.fileuploader-theme-gallery .fileuploader-item .progress-holder .fileuploader-progressbar .bar {
+    width: 100%;
+	height: 0;
+	top: auto;
+	bottom: 0;
+    border-radius: 0;
+    background: rgba(0,0,0,0.1);
+}
+
+/* sorter */
+.fileuploader-theme-gallery .fileuploader-items .fileuploader-item.sorting {
+    padding-top: 0;
+    margin: 0;
+}
+.fileuploader-theme-gallery .fileuploader-sorter-placeholder {
+    background: #f0f3f9;
+    border-radius: 6px;
+}
+
+/* responsive */
+@media all and (max-width: 1200px) {
+    .fileuploader-theme-gallery .fileuploader-input,
+    .fileuploader-theme-gallery .fileuploader-items-list .fileuploader-item {
+        width: 25%;
+        width: calc(25% - 16px);
+    }
+	.fileuploader-theme-gallery .fileuploader-input-inner {
+		min-height: 220px;
+	}
+}
+@media all and (max-width: 768px) {
+    .fileuploader-theme-gallery .fileuploader-input,
+    .fileuploader-theme-gallery .fileuploader-items-list .fileuploader-item {
+        width: 33.33333333%;
+        width: calc(33.33333333% - 16px);
+    }
+	.fileuploader-theme-gallery .fileuploader-input-inner {
+		min-height: 225px;
+	}
+}
+@media all and (max-width: 576px) {
+    .fileuploader-theme-gallery .fileuploader-input,
+    .fileuploader-theme-gallery .fileuploader-items-list .fileuploader-item {
+        width: 50%;
+        width: calc(50% - 16px);
+    }
+	.fileuploader-theme-gallery .fileuploader-input-inner {
+		min-height: 182px;
+	}
+}

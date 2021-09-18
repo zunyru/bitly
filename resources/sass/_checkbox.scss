@@ -1,0 +1,35 @@
+input {
+  &[type=checkbox] {
+    &:checked {
+      background: $main-color1;
+      border-color: $main-color1;
+
+      &:after {
+        content: "";
+        display: block;
+        width: 5px;
+        height: 10px;
+        border: solid #FFFFFF;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+        margin: 3px 6px;
+      }
+    }
+
+    background: #FFFFFF;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #9CA2A8;
+    border-radius: 3px;
+    outline: none;
+    margin-bottom: -5px;
+  }
+
+  &:hover,
+  &:focus,
+  &:active,
+  &:checked {
+    outline: none !important;
+  }
+}

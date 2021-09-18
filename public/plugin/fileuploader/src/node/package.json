@@ -1,0 +1,27 @@
+{
+  "name": "fileuploader",
+  "version": "2.2.0",
+  "description": "Validate, Remove, Upload, Sort files and Resize images on server.",
+  "private": true,
+  "main": "fileuploader.js",
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "dependencies": {
+    "gm": "^1.23.1",
+    "mime-types": "^2.1.21",
+    "multer": "^1.4.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "fileuploader",
+    "javascript",
+    "plugin",
+    "innostudio.de"
+  ],
+  "author": "innostudio.de",
+  "license": "https://innostudio.de/fileuploader/documentation/#license"
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<title>Drag&amp;Drop with form example - fileuploader - Innostudio.de</title>
+		
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Drag&amp;Drop with form example - fileuploader - Innostudio.de">
+        
+        <link rel="shortcut icon" href="https://innostudio.de/fileuploader/images/favicon.ico">
+
+		<!-- fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+        <link href="../../dist/font/font-fileuploader.css" rel="stylesheet">
+        
+		<!-- styles -->
+		<link href="../../dist/jquery.fileuploader.min.css" media="all" rel="stylesheet">
+		<link href="./css/jquery.fileuploader-theme-dropin.css" media="all" rel="stylesheet">
+		
+		<!-- js -->
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+		<script src="../../dist/jquery.fileuploader.min.js" type="text/javascript"></script>
+		<script src="./js/custom.js" type="text/javascript"></script>
+
+		<style>
+			body {
+				font-family: 'Roboto', sans-serif;
+				font-size: 14px;
+                line-height: normal;
+				background-color: #fff;
+
+				margin: 0;
+			}
+            
+            form {
+                max-width: 340px;
+                margin: 15px;
+            }
+            
+            .form-status {
+                font-weight: bold;
+                margin: 12px 0;
+            }
+            
+            .form-status p {
+                margin: 0;   
+            }
+            
+            .form-status .text-success {
+                color: #43d084;
+            }
+            
+            .form-status .text-error {
+                color: #fe7676;
+            }
+            
+            .form-status .progressbar-holder {
+                display: block;
+                width: 100%;
+                height: 4px;
+                background: #fafbfd;
+                border-radius: 6px;
+                overflow: hidden;
+            }
+            
+            .form-status .progressbar-holder .progressbar {
+                height: 100%;
+                width: 0;
+                background: #5b7bfe;
+                border-radius: 6px;
+                -webkit-transition: width 0.2s ease;
+                        transition: width 0.2s ease;
+            }
+		</style>
+	</head>
+
+	<body>
+		<form action="php/form_upload.php" id="myform" method="post" enctype="multipart/form-data">
+            <!-- file input -->
+			<input type="file" name="files">
+            
+            <div class="form-status"></div>
+			<input type="submit">
+		</form>
+    </body>
+</html>

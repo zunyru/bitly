@@ -1,0 +1,12 @@
+{
+  "name": "fileuploader-default-example",
+  "version": "2.1.0",
+  "main": "index.js",
+  "private": true,
+  "dependencies": {
+    "express": "^4.16.4",
+    "fileuploader": "file:../../../src/node/"
+  },
+  "author": "innostudio.de",
+  "license": "https://innostudio.de/fileuploader/documentation/#license"
+}

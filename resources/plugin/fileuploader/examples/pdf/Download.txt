@@ -1,0 +1,8 @@
+1. Download the stable version of mozilla/pdf.js:
+   https://mozilla.github.io/pdf.js/getting_started/#download
+
+
+
+2. Extract the files in:
+   
+assets/pdf.js/

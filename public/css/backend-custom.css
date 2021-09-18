@@ -1,0 +1,117 @@
+input[type=checkbox] {
+  background: #FFFFFF;
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #9CA2A8;
+  border-radius: 3px;
+  outline: none;
+  margin-bottom: -5px;
+}
+
+input[type=checkbox]:checked {
+  background: #FF3333;
+  border-color: #FF3333;
+}
+
+input[type=checkbox]:checked:after {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 10px;
+  border: solid #FFFFFF;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  margin: 3px 6px;
+}
+
+input:hover, input:focus, input:active, input:checked {
+  outline: none !important;
+}
+
+.voyager .btn.btn-success {
+  background: #10B981;
+}
+
+.voyager .btn.btn-success:hover {
+  background: #059669;
+}
+
+.voyager .btn.btn-danger {
+  background: #EF4444;
+}
+
+.voyager .btn.btn-danger:hover {
+  background: #DC2626;
+}
+
+.voyager .btn.btn-warning {
+  background: #F59E0B;
+}
+
+.voyager .btn.btn-warning:hover {
+  background: #D97706;
+}
+
+.voyager .btn.btn-primary {
+  background: #3B82F6;
+}
+
+.voyager .btn.btn-primary:hover {
+  background: #2563EB;
+}
+
+.voyager .side-menu .navbar-header {
+  background: #FF3333;
+  border-color: #FF3333;
+}
+
+.voyager .side-menu .panel.widget {
+  display: none;
+}
+
+.voyager .side-menu.sidebar-inverse {
+  background: #1e1e2d;
+}
+
+.voyager .side-menu.sidebar-inverse .navbar li > a {
+  color: #FFFFFF;
+}
+
+.voyager .side-menu.sidebar-inverse .navbar li > a img {
+  width: 20px;
+  margin-left: 10px;
+  margin-right: 6px;
+  margin-top: -10px;
+}
+
+.voyager .side-menu.sidebar-inverse .navbar li > a:hover {
+  color: #FFFFFF;
+  background: #13131b;
+}
+
+.voyager .side-menu.sidebar-inverse .navbar li > a:hover svg g [fill] {
+  fill: #FF3333;
+}
+
+.voyager .side-menu.sidebar-inverse .navbar li > a svg {
+  margin-left: 10px;
+}
+
+.voyager .side-menu.sidebar-inverse .navbar li > a svg g [fill] {
+  fill: #ffffff;
+}
+
+.voyager .side-menu.sidebar-inverse .navbar li.active > a {
+  background: #13131b;
+  font-weight: bold;
+}
+
+.voyager .side-menu.sidebar-inverse .navbar li.active > a svg g [fill] {
+  fill: #FF3333;
+}
+
+.form-control {
+  color: #1a1a27;
+  border: 1px solid #515151;
+}

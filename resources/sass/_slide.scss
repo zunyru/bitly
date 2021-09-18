@@ -1,0 +1,45 @@
+.voyager .side-menu {
+  .navbar-header {
+    background: $main-color1;
+    border-color: $main-color1;
+  }
+  .panel.widget {
+    display: none;
+  }
+  &.sidebar-inverse {
+    background: $main-color4;
+    .navbar li {
+      > a {
+        color: $main-color2;
+        & img{
+          width: 20px;
+          margin-left: 10px;
+          margin-right: 6px;
+          margin-top: -10px;
+        }
+        &:hover {
+          color: $main-color2;
+          background: $main-color6;
+          & svg{
+            & g [fill]{
+              fill:$main-color1;
+            }
+          }
+        }
+        & svg{
+          margin-left: 10px;
+          & g [fill]{
+            fill: #ffffff;
+          }
+        }
+      }
+      &.active > a {
+        background: $main-color6;
+        font-weight: bold;
+        & svg g [fill]{
+          fill: $main-color1;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+body, html {
+  color: #111827;
+  font-weight: 400;
+}
+
+.btn-link, .checkbox-inline, .checkbox label, .radio-inline, .radio label, label {
+  font-weight: 400;
+}
+
+body.login .form-group .container-chbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 30px;
+  width: 100%;
+  left: 0;
+  z-index: 2;
+}
+
+input[type=checkbox] {
+  background: #FFFFFF;
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #9CA2A8;
+  border-radius: 3px;
+  outline: none;
+  margin-bottom: -5px;
+}
+
+input[type=checkbox]:checked {
+  background: #1E40AF;
+  border-color: #1E40AF;
+}
+
+input[type=checkbox]:checked:after {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 10px;
+  border: solid #FFFFFF;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  margin: 3px 6px;
+}
+
+input:hover, input:focus, input:active, input:checked {
+  outline: none !important;
+}
